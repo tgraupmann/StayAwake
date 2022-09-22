@@ -1,0 +1,64 @@
+StayAwake
+Copyright (C) 2012 Micha� Le�niewski (mlesniew@users.sourceforge.net)
+
+
+What is it?
+-----------
+
+StayAwake is a small application for Windows, which allows to temporarily disable the screensaver, sleep, hibernation and anything else that is launched when the computer is idle.
+
+StayAwake can be useful if you want to watch a movie and you have to move the mouse every few minutes to avoid the screensaver. It can also help if you would like to disable the screensaver, but you can�t because of some sort of security policy.
+
+
+How does it work?
+-----------------
+
+StayAwake tries to fool Windows that there is a user moving the mouse cursor all the time. To acomplish this StayAwake sens out notification about a zero pixel mouse move every few seconds. This allows to avoid the screensaver without moving the mouse around.
+
+
+The latest version
+------------------
+
+The latest version can be downloaded from StayAwake's project page on sourceforge.org at http://sourceforge.net/projects/stayawake/. 
+
+
+Requirements
+------------
+
+StayAwake can run on Windows XP, Windows Vista and Windows 7 (and probably Windows 8). There are no other requirements.
+
+
+Installation
+------------
+
+The program is a single native Windows executable, you can put it anywhere on your disk and start it from there. 
+
+
+Reporting bugs and feedback
+---------------------------
+
+Please feel free contact the author via email to report bugs, request new features or just to say what you like and what you don't like about this application.
+
+
+Author
+------
+
+StayAwake was written by Micha� Le�niewski <mlesniew@users.sourceforge.net>.
+
+
+Other credits
+-------------
+
+The StayAwake icon is based on one of the icons from the Open Icon Library <http://openiconlibrary.sourceforge.net/>
+
+
+Licensing
+---------
+
+StayAwake is released under the General Public License version 3.0. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+
+Source
+------
+
+Originally from: https://sourceforge.net/p/stayawake

@@ -1,0 +1,207 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include <Windows.h>
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "Windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_STAYAWAKE           ICON                    "StayAwake.ico"
+IDI_TRAY_OFF            ICON                    "tray-off.ico"
+IDI_TRAY_ON             ICON                    "tray-on.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,9,0,0
+ PRODUCTVERSION 0,9,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "Micha³ Leœniewski"
+            VALUE "FileDescription", "StayAwake"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "StayAwake"
+            VALUE "LegalCopyright", "Copyright (C) 2012 Micha³ Leœniewski"
+            VALUE "OriginalFilename", "StayAwake.exe"
+            VALUE "ProductName", "StayAwake"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 208, 123
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "About StayAwake"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,143,102,50,14
+    PUSHBUTTON      "Visit website",IDC_WEBSITE,15,102,50,14
+    PUSHBUTTON      "Donate",IDC_DONATE,79,102,50,14
+    ICON            IDI_STAYAWAKE,IDC_STATIC,12,12,20,20,SS_CENTERIMAGE
+    LTEXT           "StayAwake\nVersion 1.0\nCopyright (C) 2012 Michal Lesniewski",IDC_STATIC,48,12,144,30
+    LTEXT           "Stay Awake is distributed under the \nGNU General Public License version 3.0.",IDC_STATIC,12,48,180,18
+    LTEXT           "You are welcome to send comments, feature request\nand bug reports to <mlesniew@users.sourceforge.net>",IDC_STATIC,12,72,180,18
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 208, 171
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "StayAwake settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_HOTKEY,"msctls_hotkey32",WS_BORDER | WS_TABSTOP,78,28,80,14
+    CONTROL         "Use hotketo toggle StayAwake mode ",IDC_CHECKBOX_HOTKEY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,12,136,10
+    CONTROL         "Display a balloon on mode toggle",IDC_CHECKBOX_BALLOONS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,48,121,10
+    CONTROL         "Remember state between launches",IDC_CHECKBOX_REMEMBER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,66,129,10
+    CONTROL         "Display a balloon at startup if StayAwake is active",IDC_CHECKBOX_STARTUP_BALLOON,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,84,175,10
+    CONTROL         "Use alternative mode",IDC_CHECKBOX_ALTERNATIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,102,84,10
+    CONTROL         "Start StayAwake on system startup",IDC_CHECKBOX_AUTOSTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,120,130,10
+    PUSHBUTTON      "OK",IDOK,96,150,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,150,150,50,14
+    LTEXT           "Hotkey",IDC_STATIC,42,30,24,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
